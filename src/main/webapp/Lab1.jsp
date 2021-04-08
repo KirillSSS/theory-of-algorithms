@@ -4,6 +4,7 @@
     Author     : savch
 --%>
 
+<%@page import="kirill.knu.fit.ta.FirstJavaClass"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,6 +14,16 @@
     </head>
     <body>
         <h1 align="center">Lab1</h1>
+        
+        <%! FirstJavaClass fjc = new FirstJavaClass(7);%>
+        
+        <%! 
+            int x= fjc.getMyInt();
+            
+            int y = x * x; 
+        %>
+        
+        <h1 align="center"> <font size="10"> the square of <%=x%> is <%=y%> </font size></h1>
         
         <p align="center"><a href="index.jsp">Go back</a></p>
     </body>
