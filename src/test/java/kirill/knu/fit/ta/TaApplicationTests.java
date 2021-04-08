@@ -21,6 +21,7 @@ class TaApplicationTests {
         assertEquals(Integer.MAX_VALUE,equationForLab2.equation(0,0,0,0));
         assertEquals(2,equationForLab2.equation(0,4,0,2));
         assertEquals(0.1,equationForLab2.equation(2,-3,1,3));
+        
         }
 
 }

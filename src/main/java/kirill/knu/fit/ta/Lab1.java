@@ -5,6 +5,8 @@
  */
 package kirill.knu.fit.ta;
 
+import kirill.knu.fit.ta.lab2.EquationForLab2;
+
 /**
  *
  * @author savch
@@ -20,5 +22,9 @@ public class Lab1 {
         FirstJavaClass.setMyStaticInt(477);
         
         System.out.println(FirstJavaClass.getMyStaticInt());
+    }*/
+    /*public static void main(String[] args) {
+    float x = EquationForLab2.equation(1, 2, 3, 4);
+    System.out.println(x);
     }*/
 }
