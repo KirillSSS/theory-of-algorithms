@@ -20,7 +20,7 @@
         
         <p align="center"> --------------------------------------------------------------------------------------- </p>
         
-        <form align="center" action="Lab2.jsp">
+        <form align="center" action="FormForLab2.jsp">
             <input type="submit" value="Go to Lab2 page">
         </form>
         

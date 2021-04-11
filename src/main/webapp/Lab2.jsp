@@ -15,13 +15,13 @@
     <body>
         <h1 align="center">Lab2</h1>
         
-        <%!
+        <h1 align="center"> <font size="10"><%=request.getAttribute("output")%></font size></h1>
         
-            float x = EquationForLab2.equation(1, 2, 3, 4);
-
-        %>
-        
-        <h1 align="center"> <font size="10"> the result is <%=x%> </font size></h1>
+        <div>
+            <form align="center" action="FormForLab2.jsp">  
+                <input type="submit" value="New x">
+            </form> 
+        </div>
         
         <p align="center"><a href="index.jsp">Go back</a></p>
     </body>

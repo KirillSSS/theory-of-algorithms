@@ -12,10 +12,10 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Enter your x</h1>
+        <h1 align="center">Enter your x</h1>
         
         <div>
-            <form method="post" action="lab2">
+            <form align="center" method="post" action="lab2">
                 <input type="text" name="x" placeholder="enter your x as ##.###"/>
                 <input type="submit" value="ok"/>
             </form>

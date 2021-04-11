@@ -16,11 +16,18 @@ class TaApplicationTests {
 	void contextLoads() {
 	}
         
-        @Test
+        /*@Test
         void testforlab2(){
         assertEquals(Integer.MAX_VALUE,equationForLab2.equation(0,0,0,0));
         assertEquals(2,equationForLab2.equation(0,4,0,2));
         assertEquals(0.1,equationForLab2.equation(2,-3,1,3));
+        
+        }*/
+        
+        @Test
+        void testforlab2(){
+        assertEquals(-1,equationForLab2.equation(2));
+        assertEquals(0,equationForLab2.equation(0));
         
         }
 

@@ -15,11 +15,29 @@ import org.springframework.stereotype.Component;
 @Component
 public class EquationForLab2 {
     
-    public static float equation(float a, float b, float c, float x){
+    /*public static float equation(float a, float b, float c, float x){
+    
+    float d = b * b - 4 * a * c;
+    
+    if ((a * x * x + b * x + c) == 0) {return Integer.MAX_VALUE;}
+    return d / (a * x * x + b * x + c);
+    }*/
+    
+    public static float equation(float x){
+    
+        float a = 2;
+        float b = -3;
+        float c = -6;
+        float d = 8;
         
-        float d = b * b - 4 * a * c;
+        double y1 = Math.sqrt(d * x);
         
-        if ((a * x * x + b * x + c) == 0) {return Integer.MAX_VALUE;}
-        return d / (a * x * x + b * x + c);
+        double y2 = a * Math.pow(x,2) + b * x + c;
+        
+        if (((y1 / y2)<= 0.000001) && ((y1 / y2) >= 0)){return (float) 0;}
+        else if (((y1 / y2) >= -0.000001 ) && ((y1 / y2) <= 0)) {return (float) 0;}
+        else return (float) (y1 / y2);
+        
+        //I did this so that the error created by actions with type float did not affect testing of the program
     }
 }
