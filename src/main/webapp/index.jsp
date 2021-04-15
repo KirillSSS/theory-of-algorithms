@@ -25,7 +25,14 @@
         </form>
         
         <p align="center"> --------------------------------------------------------------------------------------- </p>
+        
+        <form align="center" action="FormForLab3.jsp">
+            <input type="submit" value="Go to Lab3 page">
+        </form>
+        
+        <p align="center"> --------------------------------------------------------------------------------------- </p>
         <p align="center"><a href="Lab1.jsp">Another option to go to Lab1 page</a></p>
         <p align="center"><a href="Lab2.jsp">Another option to go to Lab2 page</a></p>
+        <p align="center"><a href="Lab3.jsp">Another option to go to Lab3 page</a></p>
     </body>
 </html>

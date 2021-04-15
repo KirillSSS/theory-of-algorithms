@@ -6,6 +6,7 @@
 package kirill.knu.fit.ta;
 
 import kirill.knu.fit.ta.lab2.EquationForLab2;
+import kirill.knu.fit.ta.lab3.TaskForLab3;
 
 /**
  *
@@ -27,4 +28,22 @@ public class Lab1 {
     float x = EquationForLab2.equation(1, 2, 3, 4);
     System.out.println(x);
     }*/
+    /*public static void main(String[] args) {
+    Tasks2 t2 = new Tasks2();
+    
+    System.out.println(t2.arrayPrint(t2.arrayShuffle(t2.arrayRange(25), 294)));
+    }*/
+        
+    public static void main(String[] args) {
+    TaskForLab3 t = new TaskForLab3();
+    
+    int arlng = 20;
+    int armax = 10;
+    
+    int[] x = t.task(arlng, armax);
+    
+    System.out.println(t.output(x));
+    System.out.println("" + t.checkForNegative(x));
+    System.out.println("" + t.check(x));
+    }
 }
