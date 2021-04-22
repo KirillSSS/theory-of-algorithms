@@ -79,8 +79,8 @@ public class ServletForLab3 extends HttpServlet {
             String check = tfl3.check(x);
 
             request.setAttribute("output", output);
-            request.setAttribute("cfn", "The number of negative numbers is" + cfn);
-            request.setAttribute("check", "The number of negative numbers at the beginning is" + check);
+            request.setAttribute("cfn", "The number of negative numbers is " + cfn);
+            request.setAttribute("check", "The number of negative numbers at the beginning is " + check);
             
             request.getRequestDispatcher("Lab3.jsp").forward(request,response);
         }
