@@ -40,10 +40,16 @@ public class Lab1 {
     int arlng = 20;
     int armax = 10;
     
-    int[] x = t.task(arlng, armax);
+    /*int[] x = t.task(arlng, armax);
     
     System.out.println(t.output(x));
     System.out.println("" + t.checkForNegative(x));
+    System.out.println("" + t.check(x));*/
+    
+    int[] x = {};
+    System.out.println(t.output(x));
+    System.out.println("" + t.checkForNegative(x));
+    //System.out.println("= " + x.length);
     System.out.println("" + t.check(x));
     }
 }

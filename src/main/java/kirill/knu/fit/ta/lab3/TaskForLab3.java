@@ -47,11 +47,16 @@ public class TaskForLab3 {
         int i = 0;
         int j = 0;
         
-        while ((i < 1) || (j > array.length)){
+        while (i < 1){
         
             if (array[j] < 0){
                 k++;
-                j++;
+                if (j < array.length - 1)
+                    j++;
+                else
+                    i = 2;
+                /*System.out.println("j = " + j);
+                System.out.println("i = " + i);*/
             }
             else {
                 i = 2;

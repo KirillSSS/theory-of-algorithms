@@ -12,6 +12,10 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <h3 align="center">Fill the array with k integers. Determine how many negative numbers it starts with.</h3>
+        
+        <p align="center"> --------------------------------------------------------------------------------------- </p>
+        
         <h1 align="center">Enter the length of your array</h1>
         
         <div>

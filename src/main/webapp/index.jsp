@@ -12,6 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <h1 align="center"> Savchuk Kirill IP-12 </h1>
         <h1 align="center">My labs for the subject "theory of algorithms".</h1>
         
         <form align="center" action="Lab1.jsp">
@@ -32,7 +33,7 @@
         
         <p align="center"> --------------------------------------------------------------------------------------- </p>
         <p align="center"><a href="Lab1.jsp">Another option to go to Lab1 page</a></p>
-        <p align="center"><a href="Lab2.jsp">Another option to go to Lab2 page</a></p>
-        <p align="center"><a href="Lab3.jsp">Another option to go to Lab3 page</a></p>
+        <p align="center"><a href="FormForLab2.jsp">Another option to go to Lab2 page</a></p>
+        <p align="center"><a href="FormForLab3.jsp">Another option to go to Lab3 page</a></p>
     </body>
 </html>

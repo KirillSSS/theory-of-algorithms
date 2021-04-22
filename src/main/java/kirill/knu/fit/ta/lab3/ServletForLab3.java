@@ -59,20 +59,31 @@ public class ServletForLab3 extends HttpServlet {
 
         TaskForLab3 tfl3 = new TaskForLab3();
         
-        int arlng = Integer.parseInt(request.getParameter("length"));
+        int arlng = 0;
+        if (request.getParameter("length") != "")
+            arlng = Integer.parseInt(request.getParameter("length"));
         int armax = 10;
-    
-        int[] x = tfl3.task(arlng, armax);
         
-        String output = tfl3.output(x);
-        String cfn = tfl3.checkForNegative(x);
-        String check = tfl3.check(x);
-        
-        request.setAttribute("output", output);
-        request.setAttribute("cfn", cfn);
-        request.setAttribute("check", check);
-        request.getRequestDispatcher("Lab3.jsp").forward(request,response);
-        
+        if (arlng <= 0){
+            request.setAttribute("output", "Please write another length of the array greater than zero");
+            request.setAttribute("cfn", "");
+            request.setAttribute("check", "");
+            
+            request.getRequestDispatcher("Lab3.jsp").forward(request,response);
+        }
+        else {
+            int[] x = tfl3.task(arlng, armax);
+
+            String output = tfl3.output(x);
+            String cfn = tfl3.checkForNegative(x);
+            String check = tfl3.check(x);
+
+            request.setAttribute("output", output);
+            request.setAttribute("cfn", "The number of negative numbers is" + cfn);
+            request.setAttribute("check", "The number of negative numbers at the beginning is" + check);
+            
+            request.getRequestDispatcher("Lab3.jsp").forward(request,response);
+        }
     }
 
     /**

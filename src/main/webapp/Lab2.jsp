@@ -14,6 +14,11 @@
     </head>
     <body>
         <h1 align="center">Lab2</h1>
+        <h2 align="center">Option 17</h2>
+        <h3 align="center">V(dx) / (ax^2 + bx + c)</h3>
+        <h3 align="center">a = 2, b = -3, c = -6, d = 8</h3>
+        <p align="center"> --------------------------------------------------------------------------------------- </p>
+        
         
         <h1 align="center"> <font size="10"><%=request.getAttribute("output")%></font size></h1>
         
