@@ -7,6 +7,7 @@ package kirill.knu.fit.ta;
 
 import kirill.knu.fit.ta.lab2.EquationForLab2;
 import kirill.knu.fit.ta.lab3.TaskForLab3;
+import kirill.knu.fit.ta.lab4.TaskForLab4;
 
 /**
  *
@@ -35,10 +36,10 @@ public class Lab1 {
     }*/
         
     public static void main(String[] args) {
-    TaskForLab3 t = new TaskForLab3();
-    
-    int arlng = 20;
-    int armax = 10;
+        /*TaskForLab3 t = new TaskForLab3();
+        
+        int arlng = 20;
+        int armax = 10;*/
     
     /*int[] x = t.task(arlng, armax);
     
@@ -46,10 +47,22 @@ public class Lab1 {
     System.out.println("" + t.checkForNegative(x));
     System.out.println("" + t.check(x));*/
     
-    int[] x = {};
+    /*int[] x = {};
     System.out.println(t.output(x));
     System.out.println("" + t.checkForNegative(x));
     //System.out.println("= " + x.length);
     System.out.println("" + t.check(x));
+    }*/
+    
+    
+    TaskForLab4 tfl4 = new TaskForLab4();
+        
+    System.out.println(tfl4.text);
+    System.out.println("--------------" + tfl4.getList(tfl4.text));
+    System.out.println("--------------" + tfl4.getList(tfl4.text).size());
+    System.out.println("==============" + tfl4.getSet(tfl4.text));
+    System.out.println("==============" + tfl4.getSet(tfl4.text).size());
+    System.out.println("" + tfl4.Task4(tfl4.getList(tfl4.text)));
+    System.out.println("" + tfl4.Task5(tfl4.text));
     }
 }
