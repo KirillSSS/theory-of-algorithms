@@ -32,8 +32,11 @@
         </form>
         
         <p align="center"> --------------------------------------------------------------------------------------- </p>
-        <p align="center"><a href="Lab1.jsp">Another option to go to Lab1 page</a></p>
-        <p align="center"><a href="FormForLab2.jsp">Another option to go to Lab2 page</a></p>
-        <p align="center"><a href="FormForLab3.jsp">Another option to go to Lab3 page</a></p>
+
+        <form align="center" action="FormForLab4.jsp">
+            <input type="submit" value="Go to Lab4 page">
+        </form>
+        
+        <p align="center"> --------------------------------------------------------------------------------------- </p>
     </body>
 </html>

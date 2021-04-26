@@ -23,7 +23,7 @@
             int y = x * x; 
         %>
         
-        <h1 align="center"> <font size="10"> the square of <%=x%> is <%=y%> </font size></h1>
+        <h1 align="center" style="color:#1E90FF"> <font size="10"> the square of <%=x%> is <%=y%> </font size></h1>
         
         <p align="center"><a href="index.jsp">Go back</a></p>
     </body>

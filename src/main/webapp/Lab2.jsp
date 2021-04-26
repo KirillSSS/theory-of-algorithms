@@ -20,7 +20,7 @@
         <p align="center"> --------------------------------------------------------------------------------------- </p>
         
         
-        <h1 align="center"> <font size="10"><%=request.getAttribute("output")%></font size></h1>
+        <h1 align="center" style="color:#1E90FF"> <font size="10"><%=request.getAttribute("output")%></font size></h1>
         
         <div>
             <form align="center" action="FormForLab2.jsp">  

@@ -17,11 +17,11 @@
         <h3 align="center">Fill the array with k integers. Determine how many negative numbers it starts with.</h3>
         <p align="center"> --------------------------------------------------------------------------------------- </p>
         
-        <h1 align="center"><%=request.getAttribute("output")%></h1>
+        <h1 align="center" style="color:#1E90FF"><%=request.getAttribute("output")%></h1>
         
-        <h1 align="center"> <font size="5"><%=request.getAttribute("cfn")%></font size></h1>
+        <h1 align="center" style="color:#1E90FF"> <font size="5"><%=request.getAttribute("cfn")%></font size></h1>
         
-        <h1 align="center"> <font size="5"><%=request.getAttribute("check")%></font size></h1>
+        <h1 align="center" style="color:#1E90FF"> <font size="5"><%=request.getAttribute("check")%></font size></h1>
         
         <div>
             <form align="center" action="FormForLab3.jsp">  

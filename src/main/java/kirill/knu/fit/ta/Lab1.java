@@ -62,7 +62,9 @@ public class Lab1 {
     System.out.println("--------------" + tfl4.getList(tfl4.text).size());
     System.out.println("==============" + tfl4.getSet(tfl4.text));
     System.out.println("==============" + tfl4.getSet(tfl4.text).size());
-    System.out.println("" + tfl4.Task4(tfl4.getList(tfl4.text)));
-    System.out.println("" + tfl4.Task5(tfl4.text));
+    System.out.println("" + tfl4.Task4(tfl4.getList(tfl4.text), 8, 1));
+    System.out.println("" + tfl4.Task5(tfl4.text, "l"));
+    System.out.println("" + tfl4.Task6(tfl4.text, 4));
+    System.out.println("" + tfl4.Task7(tfl4.getList(tfl4.text), 7));
     }
 }
