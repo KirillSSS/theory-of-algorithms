@@ -97,6 +97,7 @@ public class TaskForLab4 {
                 
                     maxid = j;
                     max = numberOfWords[j];
+                    //System.out.println(numberOfWords[j] + " " + answerList.get(j));
                     numberOfWords[j] = 0;
                 }
             }
@@ -114,13 +115,13 @@ public class TaskForLab4 {
         List<String> answerLine = new ArrayList<String>();
         String pattern = l;
         
-        mat = Pattern.compile("\\b[^" + l + "]+\\b").matcher(line);
+        mat = Pattern.compile("[a-z]*" + l + "[a-z]*").matcher(line);
         
         while (mat.find()){
-            answerLine.add(text.substring(mat.start(), mat.end()));
+            answerLine.add(line.substring(mat.start(), mat.end()));
         }
         
-        return "" + (getList(text).size() - answerLine.size());
+        return "" + (getList(line).size() - answerLine.size());
     }
     
     public String Task6(String line, int n){

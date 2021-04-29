@@ -61,10 +61,38 @@ public class ServletForLab4 extends HttpServlet {
         
         String t2 = "" + tfl4.getList(tfl4.text).size();
         String t3 = "" + tfl4.getSet(tfl4.text).size();
-        String t4 = "" + tfl4.Task4(tfl4.getList(tfl4.text), Integer.parseInt(request.getParameter("t4")), 1);
-        String t5 = "" + tfl4.Task5(tfl4.text, request.getParameter("t5"));
-        String t6 = "" + tfl4.Task6(tfl4.text, Integer.parseInt(request.getParameter("t6")));
-        String t7 = "" + tfl4.Task7(tfl4.getList(tfl4.text), Integer.parseInt(request.getParameter("t7")));
+        String t4;
+        String t5;
+        String t6;
+        String t7;        
+        
+        if (request.getParameter("t4") != ""){
+            t4 = "" + tfl4.Task4(tfl4.getList(tfl4.text), Integer.parseInt(request.getParameter("t4")), 1);
+        }
+        else{
+            t4 = "Please write another number greater than zero";
+        }
+        
+        if (request.getParameter("t5") != ""){
+            t5 = "" + tfl4.Task5(tfl4.text, request.getParameter("t5"));
+        }
+        else{
+            t5 = "Please write another letter";
+        }
+        
+        if (request.getParameter("t6") != ""){
+            t6 = "" + tfl4.Task6(tfl4.text, Integer.parseInt(request.getParameter("t6")));
+        }
+        else{
+            t6 = "Please write another number greater than zero";
+        }
+        
+        if (request.getParameter("t7") != ""){
+            t7 = "" + tfl4.Task7(tfl4.getList(tfl4.text), Integer.parseInt(request.getParameter("t7")));
+        }
+        else{
+            t7 = "Please write another number greater than zero";
+        }
         
         String a = "" + request.getParameter("t4");
         String letter = "" + request.getParameter("t5");
