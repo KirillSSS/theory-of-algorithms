@@ -38,5 +38,11 @@
         </form>
         
         <p align="center"> --------------------------------------------------------------------------------------- </p>
+        
+        <form align="center" action="FormForLab5.jsp">
+            <input type="submit" value="Go to Lab5 page">
+        </form>
+        
+        <p align="center"> --------------------------------------------------------------------------------------- </p>
     </body>
 </html>
