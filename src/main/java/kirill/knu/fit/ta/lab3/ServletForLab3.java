@@ -95,5 +95,4 @@ public class ServletForLab3 extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
 }
