@@ -29,7 +29,7 @@ Adding RFID tags to expensive pieces of equipment to help track their location w
 The IoT was initially most interesting to business and manufacturing, where its application is sometimes known as machine-to-machine (M2M), but the emphasis is now on filling our homes and offices with smart devices, transforming it into something that's relevant to almost everyone. Early suggestions for internet-connected devices included 'blogjects' (objects that blog and record data about themselves to the internet), ubiquitous computing (or 'ubicomp'), invisible computing, and pervasive computing. However, it was Internet of Things and IoT that stuck.</h4>
         <p align="center"> ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- </p>
                 
-        <h2 align="center">Search <%=request.getAttribute("t1find")%> in text</h2>
+        <h2 align="center">Search <%=request.getAttribute("t1find")%> in text (linearSearch)</h2>
         <h2 align="center" style="color:#1E90FF"><%=request.getAttribute("t1")%></h2>
         <p align="center"> ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- </p>
         
@@ -49,10 +49,10 @@ The IoT was initially most interesting to business and manufacturing, where its 
         <h2 align="center" style="color:#1E90FF"><%=request.getAttribute("sortedt2b")%></h2>
         <p align="center"> ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- </p>
         
-        <h2 align="center">Search <%=request.getAttribute("t3string")%> in string list</h2>
+        <h2 align="center">Search <%=request.getAttribute("t3string")%> in string list (sortAproach2)</h2>
         <h2 align="center" style="color:#1E90FF"><%=request.getAttribute("findt3s")%></h2>
         
-        <h2 align="center">Search <%=request.getAttribute("t3byte")%> in byte list</h2>
+        <h2 align="center">Search <%=request.getAttribute("t3byte")%> in byte list (sortAproach2)</h2>
         <h2 align="center" style="color:#1E90FF"><%=request.getAttribute("findt3b")%></h2>
         
         <div>
