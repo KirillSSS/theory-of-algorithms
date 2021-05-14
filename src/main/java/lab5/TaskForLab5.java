@@ -119,7 +119,7 @@ public class TaskForLab5 {
         String a = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
         
         for (int i = 0; i < a.length(); i++)
-            if ("" + a.charAt(i) == find)
+            if (("" + a.charAt(i)).equals(find))
                 findid = i;
         
         int result = -1;
@@ -134,12 +134,14 @@ public class TaskForLab5 {
             
             int listid = 0;
             for (int i = 0; i < a.length(); i++)
-                if (sortedList.get(n+start) == "" + a.charAt(i))
+                if (sortedList.get(n+start).equals("" + a.charAt(i)))
                     listid = i;
+                        
+            //System.out.println(findid + " | " + find + " | " + listid + " | " + sortedList.get(n + start));
             
             if (sortedList.get(n + start).equals(find)) {
                 return "position = " + (start + n);
-            } else if (listid > findid) {
+            } else if (listid < findid) {
                 start = start + n;
             }
 
@@ -161,7 +163,7 @@ public class TaskForLab5 {
             }
             n = (n + 1) / 2;
 
-            System.out.println(find + " | " + sortedList.get(n + start).byteValue());
+            //System.out.println(find + " | " + sortedList.get(n + start).byteValue());
             if (sortedList.get(n + start).byteValue() == find) {
                 return "position = " + (start + n);
             } else if (sortedList.get(n+start).byteValue() < find) {

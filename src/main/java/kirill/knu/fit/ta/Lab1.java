@@ -91,12 +91,20 @@ public class Lab1 {
     System.out.println(t1fl5.Task1Reverse("the", 0, 13, tfl4.getList(tfl4.text)));
     }*/
     
-    String a = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-        
-        List<String> alph = new ArrayList();
-        for (int i = 0; i < 52; i++) {
-                alph.add("" + a.charAt(i));
-            }
+    /*String a = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    
+    List<String> alph = new ArrayList();
+    for (int i = 0; i < 52; i++) {
+    alph.add("" + a.charAt(i));
+    }
     System.out.println("" + alph);
+    }*/
+    
+    int a = 50;
+    TaskForLab5 tfl5 = new TaskForLab5(a);
+    Task1ForLab5 t1fl5 = new Task1ForLab5();
+    
+    System.out.println(tfl5.sortApproach2String());
+    System.out.println(tfl5.Task3String("E", tfl5.sortApproach2String()));
     }
 }
