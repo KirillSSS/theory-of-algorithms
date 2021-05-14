@@ -5,9 +5,13 @@
  */
 package kirill.knu.fit.ta;
 
+import java.util.ArrayList;
+import java.util.List;
 import kirill.knu.fit.ta.lab2.EquationForLab2;
 import kirill.knu.fit.ta.lab3.TaskForLab3;
 import kirill.knu.fit.ta.lab4.TaskForLab4;
+import lab5.Task1ForLab5;
+import lab5.TaskForLab5;
 
 /**
  *
@@ -56,8 +60,8 @@ public class Lab1 {
     
     
     TaskForLab4 tfl4 = new TaskForLab4();
-    String text5 = "air apple banana ping-pong crazy green bouble double";
-        
+    /*String text5 = "air apple banana ping-pong crazy green bouble double";
+    
     System.out.println(tfl4.text);
     System.out.println("--------------" + tfl4.getList(tfl4.text));
     System.out.println("--------------" + tfl4.getList(tfl4.text).size());
@@ -67,5 +71,32 @@ public class Lab1 {
     System.out.println("" + tfl4.Task5(text5, "p"));
     System.out.println("" + tfl4.Task6(tfl4.text, 4));
     System.out.println("" + tfl4.Task7(tfl4.getList(tfl4.text), 7));
+    */
+    
+    /*int a = 100;
+    TaskForLab5 tfl5 = new TaskForLab5(a);
+    Task1ForLab5 t1fl5 = new Task1ForLab5();
+    
+    
+    
+    System.out.println(tfl5.getUnsortedStringList());
+    System.out.println(tfl5.sortApproach2String());
+    System.out.println(tfl5.Task3String("A", tfl5.sortApproach2String()));
+    System.out.println(tfl5.getUnsortedByteList());
+    System.out.println(tfl5.sortApproach2Byte());
+    System.out.println(tfl5.Task3Byte((byte)18, tfl5.sortApproach2Byte()));
+    
+    //System.out.println(tfl4.getList(tfl4.text));
+    System.out.println(t1fl5.Task1("the", 0, 13, tfl4.getList(tfl4.text)));
+    System.out.println(t1fl5.Task1Reverse("the", 0, 13, tfl4.getList(tfl4.text)));
+    }*/
+    
+    String a = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+        
+        List<String> alph = new ArrayList();
+        for (int i = 0; i < 52; i++) {
+                alph.add("" + a.charAt(i));
+            }
+    System.out.println("" + alph);
     }
 }

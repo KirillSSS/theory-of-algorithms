@@ -1,8 +1,12 @@
 package kirill.knu.fit.ta;
 
+import java.util.ArrayList;
+import java.util.List;
 import kirill.knu.fit.ta.lab2.EquationForLab2;
 import kirill.knu.fit.ta.lab3.TaskForLab3;
 import kirill.knu.fit.ta.lab4.TaskForLab4;
+import lab5.Task1ForLab5;
+import lab5.TaskForLab5;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -121,5 +125,41 @@ class TaApplicationTests {
         assertEquals("1: the = 29 | 2: ing = 21 | ",tfl4.Task7(tfl4.getList(tfl4.text), 2));
         assertEquals("1: the = 29 | 2: ing = 21 | 3: and = 16 | ",tfl4.Task7(tfl4.getList(tfl4.text), 3));
         assertEquals("1: the = 29 | 2: ing = 21 | 3: and = 16 | 4: int = 15 | ",tfl4.Task7(tfl4.getList(tfl4.text), 4));
+        }
+        
+        @Test
+        void testforlab5Check(){
+        
+        Task1ForLab5 t1fl5 = new Task1ForLab5();
+        TaskForLab5 tfl5 = new TaskForLab5(5);
+        TaskForLab4 tfl4 = new TaskForLab4();
+            
+        String text = "the America green yellow black difficult another apple pitch";
+        
+        assertEquals("position = " + 0,t1fl5.Task1("the", -1, -1, tfl4.getList(text)));
+        assertEquals("position = " + 3,t1fl5.Task1("yellow", -1, -1, tfl4.getList(text)));
+        assertEquals("position = " + 8,t1fl5.Task1("pitch", -1, -1, tfl4.getList(text)));
+        
+        assertEquals("-1",t1fl5.Task1("another", -1, 3, tfl4.getList(text)));
+        assertEquals("-1",t1fl5.Task1("pitch", 1, 2, tfl4.getList(text)));
+        
+        String text2 = "a b c d e f g h i j k l m n o p q r s t u v w x y z";
+        
+        assertEquals("position = " + 10,t1fl5.Task1("k", 7, 13, tfl4.getList(text2)));
+        assertEquals("-1",t1fl5.Task1("k", 12, 13, tfl4.getList(text2)));
+        assertEquals("position = " + 23,t1fl5.Task1("x", 15, -1, tfl4.getList(text2)));
+        assertEquals("-1",t1fl5.Task1("k", 24, 25, tfl4.getList(text2)));
+        
+        
+        
+        /*String a = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+        
+        List<String> alph = new ArrayList();
+        for (int i = 0; i < 52; i++) {
+        alph.add("" + a.charAt(i));
+        }
+        
+        assertEquals("position = " + 55,tfl5.Task3String("y", alph));
+        assertEquals("position = " + 26,tfl5.Task3String("a", alph));*/
         }
 }
