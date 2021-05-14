@@ -147,7 +147,7 @@ public class TaskForLab5 {
 
         return "" + result;
     }
-    
+     
     public String Task3Byte(Byte find, List<Byte> sortedList){
     
         //System.out.println(find);
