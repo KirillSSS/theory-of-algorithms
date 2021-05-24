@@ -5,6 +5,8 @@ import java.util.List;
 import kirill.knu.fit.ta.lab2.EquationForLab2;
 import kirill.knu.fit.ta.lab3.TaskForLab3;
 import kirill.knu.fit.ta.lab4.TaskForLab4;
+import kirill.knu.fit.ta.lab6_7.TaskForLab6;
+import kirill.knu.fit.ta.lab6_7.TaskForLab7;
 import lab5.Task1ForLab5;
 import lab5.TaskForLab5;
 import org.junit.jupiter.api.Test;
@@ -151,7 +153,6 @@ class TaApplicationTests {
         assertEquals("-1",t1fl5.Task1("k", 24, 25, tfl4.getList(text2)));
         
         
-        
         /*String a = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
         
         List<String> alph = new ArrayList();
@@ -161,5 +162,54 @@ class TaApplicationTests {
         
         assertEquals("position = " + 55,tfl5.Task3String("y", alph));
         assertEquals("position = " + 26,tfl5.Task3String("a", alph));*/
+        }
+        
+        @Test
+        void testforlab6_7Check(){
+        
+            TaskForLab6 tfl6 = new TaskForLab6();
+            TaskForLab7 tfl7 = new TaskForLab7();
+            
+            tfl7.add(3);
+            tfl7.add(6);
+            tfl7.add(11);
+            tfl7.add(10);
+            tfl7.add(7);
+            tfl7.add(8);
+            tfl7.add(1);
+            tfl7.add(2);
+            
+            int[] a = {2, 5, 8};
+            String s = "2 5";
+            
+            assertEquals("44, 41, 38, 35, 32, 29, 26, 23, 20, 17, 14, 11, 8, 5, 2, ",tfl6.answer(s, 15));
+            assertEquals("29, 26, 23, 20, 17, 14, 11, 8, 5, 2, ",tfl6.answer(s, 10));
+            assertEquals("14, 11, 8, 5, 2, ",tfl6.answer(s, 5));
+            assertEquals("",tfl6.answer(s, 0));
+            
+            String s1 = "4 18";
+            
+            assertEquals("200, 186, 172, 158, 144, 130, 116, 102, 88, 74, 60, 46, 32, 18, 4, ",tfl6.answer(s1, 15));
+            assertEquals("130, 116, 102, 88, 74, 60, 46, 32, 18, 4, ",tfl6.answer(s1, 10));
+            assertEquals("60, 46, 32, 18, 4, ",tfl6.answer(s1, 5));
+            assertEquals("",tfl6.answer(s1, 0));
+            
+            String s2 = "askdjhas";
+            assertEquals("Error,this array should only contain numbers",tfl6.answer(s2, 5));
+            
+            String s3 = "1 2 3c";
+            assertEquals("Error,this array should only contain numbers",tfl6.answer(s3, 5));
+            
+            String s4 = "1, 2, 3";
+            assertEquals("Error,this array should only contain numbers",tfl6.answer(s4, 5));
+            
+            //-------------------------------------------------------------------------------------------------------------------------
+            
+            assertEquals(false,tfl7.containsNode(15));
+            assertEquals(true,tfl7.containsNode(10));
+            assertEquals(false,tfl7.containsNode(5));
+            assertEquals(false,tfl7.containsNode(0));
+            assertEquals(true,tfl7.containsNode(11));
+            assertEquals(true,tfl7.containsNode(3));
         }
 }
