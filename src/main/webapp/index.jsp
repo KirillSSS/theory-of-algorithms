@@ -44,5 +44,11 @@
         </form>
         
         <p align="center"> --------------------------------------------------------------------------------------- </p>
+        
+        <form align="center" action="FormForLab6-7.jsp">
+            <input type="submit" value="Go to Lab6-7 page">
+        </form>
+        
+        <p align="center"> --------------------------------------------------------------------------------------- </p>
     </body>
 </html>

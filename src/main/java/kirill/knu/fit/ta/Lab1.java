@@ -10,6 +10,8 @@ import java.util.List;
 import kirill.knu.fit.ta.lab2.EquationForLab2;
 import kirill.knu.fit.ta.lab3.TaskForLab3;
 import kirill.knu.fit.ta.lab4.TaskForLab4;
+import kirill.knu.fit.ta.lab6_7.TaskForLab6;
+import kirill.knu.fit.ta.lab6_7.TaskForLab7;
 import lab5.Task1ForLab5;
 import lab5.TaskForLab5;
 
@@ -99,12 +101,60 @@ public class Lab1 {
     }
     System.out.println("" + alph);
     }*/
-    
+    /*
     int a = 50;
     TaskForLab5 tfl5 = new TaskForLab5(a);
     Task1ForLab5 t1fl5 = new Task1ForLab5();
     
     System.out.println(tfl5.sortApproach2String());
-    System.out.println(tfl5.Task3String("E", tfl5.sortApproach2String()));
+    System.out.println(tfl5.Task3String("E", tfl5.sortApproach2String()));*/
+    
+    TaskForLab6 tfl6 = new TaskForLab6();
+    
+    int[] a = {2, 5, 8};
+    String s = "4 18";
+    //System.out.println(tfl6.arith(a, 4));
+    System.out.println(tfl6.answer(s, 15));
+    //System.out.println(tfl6.translate(s));
+    
+    TaskForLab7 tfl7 = new TaskForLab7();
+       
+        //{3, 6, 11, 10, 7, 8, 1, 2}.
+    
+        tfl7.add(3);
+        tfl7.add(6);
+        tfl7.add(11);
+        tfl7.add(10);
+        tfl7.add(7);
+        tfl7.add(8);
+        tfl7.add(1);
+        tfl7.add(2);
+        
+        System.out.println(tfl7.containsNode(15));
+        System.out.println(tfl7.containsNode(10));
+        System.out.println("=" + tfl7.showTree());
+        System.out.println("=" + tfl7.nodeIndexList());
+        
+        System.out.println(tfl7.traverseInOrder(tfl7.root));
+        System.out.println("");
+        System.out.println(tfl7.traversePreOrder(tfl7.root));
+        System.out.println("");
+        System.out.println(tfl7.traversePostOrder(tfl7.root));
+        System.out.println("");
+        System.out.println(tfl7.traverseLevelOrder(tfl7.root));
+        System.out.println("");
+        
+        //tree.delete(10);
+        
+        /*System.out.println(tree.containsNode(10));
+        
+        tree.traverseInOrder(tree.root);
+        System.out.println("");
+        tree.traversePreOrder(tree.root);
+        System.out.println("");
+        tree.traversePostOrder(tree.root);
+        System.out.println("");
+        tree.traverseLevelOrder(tree.root);
+        System.out.println("");*/
     }
 }
