@@ -29,6 +29,9 @@ public class TaskForLab6 {
         int[] result = new int[listResult.size()];
         int[] fake = {Integer.MIN_VALUE};
         
+        if (listResult.size() < 2)
+            return fake;
+        
         for (int i = 0; i < listResult.size(); i++)
             if (isANumber(listResult.get(i)))
                 result[i] = Integer.parseInt(listResult.get(i));
