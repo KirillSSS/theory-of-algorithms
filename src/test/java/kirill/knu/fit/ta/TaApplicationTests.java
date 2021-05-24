@@ -164,7 +164,7 @@ class TaApplicationTests {
         assertEquals("position = " + 26,tfl5.Task3String("a", alph));*/
         }
         
-        @Test
+        @Test 
         void testforlab6_7Check(){
         
             TaskForLab6 tfl6 = new TaskForLab6();
