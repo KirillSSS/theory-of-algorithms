@@ -12,6 +12,8 @@ import kirill.knu.fit.ta.lab3.TaskForLab3;
 import kirill.knu.fit.ta.lab4.TaskForLab4;
 import kirill.knu.fit.ta.lab6_7.TaskForLab6;
 import kirill.knu.fit.ta.lab6_7.TaskForLab7;
+import kirill.knu.fit.ta.lab8.TaskForLab8;
+import kirill.knu.fit.ta.lab8.Timer;
 import lab5.Task1ForLab5;
 import lab5.TaskForLab5;
 
@@ -109,7 +111,7 @@ public class Lab1 {
     System.out.println(tfl5.sortApproach2String());
     System.out.println(tfl5.Task3String("E", tfl5.sortApproach2String()));*/
     
-    TaskForLab6 tfl6 = new TaskForLab6();
+    /*TaskForLab6 tfl6 = new TaskForLab6();
     
     int[] a = {2, 5, 8};
     String s = "4 18";
@@ -118,31 +120,31 @@ public class Lab1 {
     //System.out.println(tfl6.translate(s));
     
     TaskForLab7 tfl7 = new TaskForLab7();
-       
-        //{3, 6, 11, 10, 7, 8, 1, 2}.
     
-        tfl7.add(3);
-        tfl7.add(6);
-        tfl7.add(11);
-        tfl7.add(10);
-        tfl7.add(7);
-        tfl7.add(8);
-        tfl7.add(1);
-        tfl7.add(2);
-        
-        System.out.println(tfl7.containsNode(15));
-        System.out.println(tfl7.containsNode(10));
-        System.out.println("=" + tfl7.showTree());
-        System.out.println("=" + tfl7.nodeIndexList());
-        
-        System.out.println(tfl7.traverseInOrder(tfl7.root));
-        System.out.println("");
-        System.out.println(tfl7.traversePreOrder(tfl7.root));
-        System.out.println("");
-        System.out.println(tfl7.traversePostOrder(tfl7.root));
-        System.out.println("");
-        System.out.println(tfl7.traverseLevelOrder(tfl7.root));
-        System.out.println("");
+    //{3, 6, 11, 10, 7, 8, 1, 2}.
+    
+    tfl7.add(3);
+    tfl7.add(6);
+    tfl7.add(11);
+    tfl7.add(10);
+    tfl7.add(7);
+    tfl7.add(8);
+    tfl7.add(1);
+    tfl7.add(2);
+    
+    System.out.println(tfl7.containsNode(15));
+    System.out.println(tfl7.containsNode(10));
+    System.out.println("=" + tfl7.showTree());
+    System.out.println("=" + tfl7.nodeIndexList());
+    
+    System.out.println(tfl7.traverseInOrder(tfl7.root));
+    System.out.println("");
+    System.out.println(tfl7.traversePreOrder(tfl7.root));
+    System.out.println("");
+    System.out.println(tfl7.traversePostOrder(tfl7.root));
+    System.out.println("");
+    System.out.println(tfl7.traverseLevelOrder(tfl7.root));
+    System.out.println("");*/
         
         //tree.delete(10);
         
@@ -156,5 +158,27 @@ public class Lab1 {
         System.out.println("");
         tree.traverseLevelOrder(tree.root);
         System.out.println("");*/
+        
+        TaskForLab8 tfl8 = new TaskForLab8();
+        TaskForLab3 tfl3 = new TaskForLab3();
+        Timer timer = new Timer();
+        
+        int[] a = {83, 76, 24, 12, 2, 12, -56};
+        
+        //int[] a = tfl8.random();
+        int b = -56;
+        
+        tfl8.bubbleSort(a);
+        
+        System.out.println(tfl3.output(a));
+        
+        System.out.println(tfl8.linearSearch(a, b));
+        System.out.println(timer.linearSearchTime(a, b));
+        
+        System.out.println(tfl8.binarySearch(a, b, 0, 0));
+        System.out.println(timer.binarySearchTime(a, b));
+        
+        System.out.println(tfl8.exponentialSearch(a, b));
+        System.out.println(timer.exponentialSearchTime(a, b));
     }
 }

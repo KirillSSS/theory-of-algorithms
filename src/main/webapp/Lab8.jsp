@@ -12,17 +12,35 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1 align="center">Lab6</h1>
-        <h2 align="center">Option 17</h2>
-        <h3 align="center">Complete the task using recursion and build a binary tree</h3>
+        <h1 align="center">Lab8</h1>
+        <h3 align="center">Methods for finding a number in an array</h3>
+        
+        <h2 align="center">Your sorted array:</h2>
+        <h2 align="center" style="color:#1E90FF"><%=request.getAttribute("array")%></h2>
         
         <p align="center"> ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- </p>
                 
-        <h2 align="center">Search <%=request.getAttribute("l6n")%> numbers of arithmetic progression <%=request.getAttribute("l6array")%></h2>
-        <h2 align="center" style="color:#1E90FF"><%=request.getAttribute("lab6")%></h2>
+        <h2 align="center">LinearSearch for <%=request.getAttribute("n")%></h2>
+        <h2 align="center" style="color:#1E90FF">Result: <%=request.getAttribute("lS")%></h2>
+        <h2 align="center" style="color:#1E90FF">Time: <%=request.getAttribute("lSTime")%></h2>
+        <h2 align="center" style="color:#1E90FF">Complexity: O(N)</h2>
+        
+        <p align="center"> ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- </p>
+                
+        <h2 align="center">BinarySearch for <%=request.getAttribute("n")%></h2>
+        <h2 align="center" style="color:#1E90FF">Result: <%=request.getAttribute("bS")%></h2>
+        <h2 align="center" style="color:#1E90FF">Time: <%=request.getAttribute("bSTime")%></h2>
+        <h2 align="center" style="color:#1E90FF">Complexity: O(log (N)) </h2>
+        
+        <p align="center"> ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- </p>
+                
+        <h2 align="center">ExponentialSearch for <%=request.getAttribute("n")%></h2>
+        <h2 align="center" style="color:#1E90FF">Result: <%=request.getAttribute("eS")%></h2>
+        <h2 align="center" style="color:#1E90FF">Time: <%=request.getAttribute("eSTime")%></h2>
+        <h2 align="center" style="color:#1E90FF">Complexity: O(log (N)) </h2>
         
         <div>
-            <form align="center" action="FormForLab6-7.jsp">  
+            <form align="center" action="FormForLab8.jsp">  
                 <input type="submit" value="One more time">
             </form> 
         </div>

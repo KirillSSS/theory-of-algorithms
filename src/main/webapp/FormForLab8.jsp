@@ -12,30 +12,19 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h2 align="center">Complete the task using recursion and build a binary tree</h2>
+        <h2 align="center">Methods for finding a number in an array</h2>
                 
         <p align="center"> ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- </p>
 
         
         <div>
-            <form align="center" method="post" action="lab6_7">
-                <h1 align="center">Lab6</h1>
-                <h2 align="center">Enter the first two numbers of the arithmetic progression(only numbers without punctuation marks and separated by a space (like "2 5 8"))</h2>
-                <input type="text" name="l6arrey" placeholder="only numbers without punctuation marks and separated by a space (like "2 5 8")"/>
-                <h2 align="center">Enter the number of numbers of the arithmetic progression to search for</h2>
-                <input type="text" name="l6n" placeholder="like 15"/>
+            <form align="center" method="post" action="lab8">
+                <h1 align="center">Lab8</h1>
+                <h2 align="center">Enter the array(only numbers without punctuation marks and separated by a space (like "2 5 8")) or write "random", if you want a random length array with numbers from -100 to 100</h2>
+                <input type="text" name="array" placeholder="only numbers without punctuation marks and separated by a space (like "2 5 8")"/>
                 
-                <p align="center"> ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- </p>
-                <h1 align="center">Lab7</h1>
-                <h2 align="center">Numbers for a binary tree: [3, 6, 11, 10, 7, 8, 1, 2]</h2>
-
-                <h2 align="center">Enter the Number1 for tree search</h2>
-                <input type="text" name="n1" placeholder="number"/>
-                <h2 align="center">Enter the Number2 for tree search</h2>
-                <input type="text" name="n2" placeholder="number"/>
-                <!--<h2 align="center">Enter the number to delete</h2>-->
-                <!--<input type="text" name="nd" placeholder="number"/>-->
-                <p> <p>
+                <h2 align="center">Enter the number to search in this array</h2>
+                <input type="text" name="n" placeholder="like 15"/>
                 <input type="submit" value="ok"/>
             </form>
         </div>

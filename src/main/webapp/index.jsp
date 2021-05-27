@@ -50,5 +50,11 @@
         </form>
         
         <p align="center"> --------------------------------------------------------------------------------------- </p>
+        
+        <form align="center" action="FormForLab8.jsp">
+            <input type="submit" value="Go to Lab8 page">
+        </form>
+        
+        <p align="center"> --------------------------------------------------------------------------------------- </p>
     </body>
 </html>
