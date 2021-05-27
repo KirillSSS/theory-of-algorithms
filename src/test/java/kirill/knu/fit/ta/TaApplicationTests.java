@@ -7,6 +7,7 @@ import kirill.knu.fit.ta.lab3.TaskForLab3;
 import kirill.knu.fit.ta.lab4.TaskForLab4;
 import kirill.knu.fit.ta.lab6_7.TaskForLab6;
 import kirill.knu.fit.ta.lab6_7.TaskForLab7;
+import kirill.knu.fit.ta.lab8.TaskForLab8;
 import lab5.Task1ForLab5;
 import lab5.TaskForLab5;
 import org.junit.jupiter.api.Test;
@@ -211,5 +212,70 @@ class TaApplicationTests {
             assertEquals(false,tfl7.containsNode(0));
             assertEquals(true,tfl7.containsNode(11));
             assertEquals(true,tfl7.containsNode(3));
+        }
+        
+        @Test 
+        void testforlab8Check(){
+            
+            TaskForLab8 tfl8 = new TaskForLab8();
+            
+            int[] a = {83, 76, 24, 12, 12, 2, -56};
+            int b = -56;
+            tfl8.bubbleSort(a);
+        
+            assertEquals("6",tfl8.linearSearch(a, b));
+            assertEquals("6",tfl8.binarySearch(a, b, 0, 0));
+            assertEquals("6",tfl8.exponentialSearch(a, b));
+            
+            b = 100000;
+            
+            assertEquals("there is no such number",tfl8.linearSearch(a, b));
+            assertEquals("there is no such number",tfl8.binarySearch(a, b, 0, 0));
+            assertEquals("there is no such number",tfl8.exponentialSearch(a, b));
+            
+            b = 2;
+            
+            assertEquals("5",tfl8.linearSearch(a, b));
+            assertEquals("5",tfl8.binarySearch(a, b, 0, 0));
+            assertEquals("5",tfl8.exponentialSearch(a, b));
+            
+            b = 76;
+            
+            assertEquals("1",tfl8.linearSearch(a, b));
+            assertEquals("1",tfl8.binarySearch(a, b, 0, 0));
+            assertEquals("1",tfl8.exponentialSearch(a, b));
+            
+            int[] a1 = {176, 56, 176, 218, 3, 10, 98, 16, -33, -56, - 4000, 80};
+            b = -56;
+            tfl8.bubbleSort(a1);
+        
+            assertEquals("10",tfl8.linearSearch(a1, b));
+            assertEquals("10",tfl8.binarySearch(a1, b, 0, 0));
+            assertEquals("10",tfl8.exponentialSearch(a1, b));
+            
+            b = 80;
+            
+            assertEquals("4",tfl8.linearSearch(a1, b));
+            assertEquals("4",tfl8.binarySearch(a1, b, 0, 0));
+            assertEquals("4",tfl8.exponentialSearch(a1, b));
+            
+            
+            b = 15;
+            
+            assertEquals("there is no such number",tfl8.linearSearch(a1, b));
+            assertEquals("there is no such number",tfl8.binarySearch(a1, b, 0, 0));
+            assertEquals("there is no such number",tfl8.exponentialSearch(a1, b));
+            
+            b = -4000;
+            
+            assertEquals("11",tfl8.linearSearch(a1, b));
+            assertEquals("11",tfl8.binarySearch(a1, b, 0, 0));
+            assertEquals("11",tfl8.exponentialSearch(a1, b));
+            
+            b = 218;
+            
+            assertEquals("0",tfl8.linearSearch(a1, b));
+            assertEquals("0",tfl8.binarySearch(a1, b, 0, 0));
+            assertEquals("0",tfl8.exponentialSearch(a1, b));
         }
 }

@@ -163,7 +163,7 @@ public class Lab1 {
         TaskForLab3 tfl3 = new TaskForLab3();
         Timer timer = new Timer();
         
-        int[] a = {83, 76, 24, 12, 2, 12, -56};
+        int[] a = {176, 56, 176, 218, 3, 10, 98, 16, -33, -56, - 4000, 80};
         
         //int[] a = tfl8.random();
         int b = -56;
