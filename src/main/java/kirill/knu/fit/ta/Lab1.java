@@ -7,6 +7,7 @@ package kirill.knu.fit.ta;
 
 import java.util.ArrayList;
 import java.util.List;
+import kirill.knu.fit.ta.exam.TaskForExam1;
 import kirill.knu.fit.ta.lab2.EquationForLab2;
 import kirill.knu.fit.ta.lab3.TaskForLab3;
 import kirill.knu.fit.ta.lab4.TaskForLab4;
@@ -159,7 +160,7 @@ public class Lab1 {
         tree.traverseLevelOrder(tree.root);
         System.out.println("");*/
         
-        TaskForLab8 tfl8 = new TaskForLab8();
+        /*TaskForLab8 tfl8 = new TaskForLab8();
         TaskForLab3 tfl3 = new TaskForLab3();
         Timer timer = new Timer();
         
@@ -179,6 +180,20 @@ public class Lab1 {
         System.out.println(timer.binarySearchTime(a, b));
         
         System.out.println(tfl8.exponentialSearch(a, b));
-        System.out.println(timer.exponentialSearchTime(a, b));
+        System.out.println(timer.exponentialSearchTime(a, b));*/
+        
+        /*double x = 0.0000000001;
+        String a = String.format("%.3f",x);
+        double x1 = Float.parseFloat(a);
+        
+        System.out.println(a);
+        System.out.println();*/
+        
+        TaskForExam1 tfe1 = new TaskForExam1();
+        
+        System.out.println(tfe1.equation("150"));
+        
+        System.out.println(Float.MAX_VALUE + "");
+        
     }
 }
